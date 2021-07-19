@@ -61,7 +61,7 @@ const App = () => {
 	return (
 		<>
 			<GithubCorner
-				href='https://github.com/username/repo'
+				href='https://github.com/MBM1607/pomodoro'
 				bannerColor='#264143'
 				octoColor='#eddcd9'
 			/>
