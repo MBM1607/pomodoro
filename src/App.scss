@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;400&display=swap');
+
+$background-color: #eddcd9;
+$main-color: #264143;
+$font-family: 'Mitr', sans-serif;
+$normal-weight: 200;
+$heading-weight: 400;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: $background-color;
+}
+
+#root {
+	color: $main-color;
+	font-family: $font-family;
+	font-weight: $normal-weight;
+	width: 100%;
+	padding: 3rem;
+}
+
+main {
+	border: 2px solid $main-color;
+	max-width: 600px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+h1 {
+	font-weight: $heading-weight;
+	text-align: center;
+	font-size: 3.25rem;
+}
+
+.time-input {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+	font-size: 1.625rem;
+
+	.label {
+		text-transform: capitalize;
+	}
+
+	.input-div {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		min-width: 120px;
+	}
+}
+
+.timer {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	min-width: 120px;
+	margin: 5rem auto;
+	border: 5px solid $main-color;
+	text-align: center;
+
+	p {
+		font-size: 2rem;
+	}
+}
+
+button {
+	outline: 0;
+	border: 0;
+	font-size: 1rem;
+	background-color: transparent;
+	color: $main-color;
+	font-size: 2rem;
+
+	&.icon {
+		margin: 1rem;
+	}
+
+	&:focus {
+		border: 1px solid #264143;
+	}
+}
+
+footer {
+	text-align: center;
+	color: $main-color;
+	width: 100%;
+	font-size: 1rem;
+	padding: 0.5em;
+}
